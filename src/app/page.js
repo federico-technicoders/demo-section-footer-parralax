@@ -1,4 +1,5 @@
 import { Footer } from "@/components/Footer";
+import TextParallax from "@/components/TextParallax";
 
 
 export default function Home() {
@@ -12,7 +13,7 @@ export default function Home() {
                     className='flex justify-center items-center w-full h-full bg-black'
                 >
                     <h2 className="text-5xl text-white font-bold">
-                        Sección Equipo
+                        Sección 1
                     </h2>
                 </div>
             </section>
@@ -25,7 +26,7 @@ export default function Home() {
                 >
                     <h2 className="text-5xl text-white font-bold">
 
-                        Sección Tecnología
+                        Sección 2
                     </h2>
                 </div>
             </section>
@@ -37,7 +38,7 @@ export default function Home() {
                 >
                     <h2 className="text-5xl text-white font-bold">
 
-                        Sección Testimonio
+                        Sección 3
                     </h2>
                 </div>
             </section>
@@ -49,13 +50,14 @@ export default function Home() {
                 >
                     <h2 className="text-5xl text-white font-bold">
 
-                        Sección Contacto
+                        Sección 4
                     </h2>
                 </div>
             </section>
         </main>
-        <Footer />
+        {/* <Footer /> */}
+        <TextParallax text={'Comienza con tu futuro digital'} />
 
     </div>
-    );
+    )
 }

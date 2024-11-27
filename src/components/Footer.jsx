@@ -5,6 +5,7 @@ import { useRef } from 'react'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import Marquee from './Marquee'
 
 export const Footer = () => {
     const textFooter = useRef(null)
@@ -27,7 +28,7 @@ export const Footer = () => {
         })
         // gsap
     })
-    
+    const elements = ['Comienza', 'con', 'tu', 'futuro', 'digital', 'Comienza', 'con', 'tu', 'futuro', 'digital']
     return (
         <footer className="flex flex-col justify-center items-center w-full bg-transparent">			
             <div
@@ -44,6 +45,7 @@ export const Footer = () => {
                 <p className="text-[160px] text-white font-bold uppercase text-center text-wrap">
                     Comienza con tu futuro digital
                 </p>
+                {/* <Marquee ELEMENTS={elements} /> */}
             </div>
         </footer>
     )
