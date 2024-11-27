@@ -1,10 +1,10 @@
 'use client'
+
+import { useRef } from 'react';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
-import Image from 'next/image'
-// import styles from './page.module.css'
-import { useRef } from 'react';
+
 
 export default function TextParallax({text=''}) {
 
@@ -57,6 +57,7 @@ export default function TextParallax({text=''}) {
                         {text}{'-'}
                     </p>
                     <p 
+
                         ref={secondText}
                         className='m-0 text-white text-[240px] font-bold'
                     >
